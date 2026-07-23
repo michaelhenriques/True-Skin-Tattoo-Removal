@@ -1,0 +1,47 @@
+{
+  "name": "QuoteRequest",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The customer's name"
+    },
+    "contact": {
+      "type": "string",
+      "description": "Phone number or email for follow-up"
+    },
+    "tattoo_size": {
+      "type": "string",
+      "enum": [
+        "xs",
+        "s",
+        "m",
+        "l",
+        "multi"
+      ],
+      "description": "Tattoo size category",
+      "default": "s"
+    },
+    "placement": {
+      "type": "string",
+      "description": "Where on the body the tattoo is located"
+    },
+    "goal": {
+      "type": "string",
+      "enum": [
+        "remove",
+        "fade"
+      ],
+      "description": "Complete removal or fade for cover-up",
+      "default": "remove"
+    },
+    "message": {
+      "type": "string",
+      "description": "Additional details from the customer"
+    }
+  },
+  "required": [
+    "name",
+    "contact"
+  ]
+}

@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 196 25% 98%;
+    --foreground: 203 46% 17%;
+    --card: 0 0% 100%;
+    --card-foreground: 203 46% 17%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 203 46% 17%;
+    --primary: 196 82% 33%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 195 85% 26%;
+    --secondary: 194 41% 92%;
+    --secondary-foreground: 195 85% 26%;
+    --muted: 197 24% 89%;
+    --muted-foreground: 201 18% 43%;
+    --accent: 191 56% 65%;
+    --accent-foreground: 202 60% 12%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 197 24% 89%;
+    --input: 197 24% 89%;
+    --ring: 196 82% 33%;
+    --dark: 202 60% 12%;
+    --dark-muted: 197 21% 69%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --font-heading: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 202 60% 12%;
+    --foreground: 0 0% 98%;
+    --card: 202 60% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 202 60% 12%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 202 60% 12%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
+
+/* Wistia hero background — force full-cover sizing */
+.hero-video-bg wistia-player {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 200% !important;
+  height: 200% !important;
+  aspect-ratio: auto !important;
+  display: block;
+  transform: translate(-50%, -50%);
+}
+.hero-video-bg wistia-player::part(presentation) {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Blog article typography */
+.blog-content {
+  font-size: 17px;
+  line-height: 1.75;
+  color: hsl(var(--foreground));
+}
+.blog-content > p {
+  margin: 0 0 1.4em;
+}
+.blog-content h2 {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  margin: 2em 0 0.6em;
+  color: hsl(var(--foreground));
+}
+.blog-content ul {
+  margin: 0 0 1.4em;
+  padding-left: 1.3em;
+  list-style: disc;
+}
+.blog-content li {
+  margin: 0 0 0.5em;
+}
+.blog-content strong {
+  font-weight: 700;
+}

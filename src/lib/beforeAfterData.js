@@ -1,0 +1,88 @@
+export const beforeAfterResults = [
+  {
+    id: 1,
+    title: 'Forearm — Black Ink',
+    sessions: 14,
+    category: 'Black Ink',
+    image: 'https://trueskintattooremoval.com/assets/result-1-ClCf1DFR.webp',
+  },
+  {
+    id: 2,
+    title: 'Finger — Black Ink',
+    sessions: 4,
+    category: 'Black Ink',
+    image: 'https://trueskintattooremoval.com/assets/result-2-SnSrgr1c.webp',
+  },
+  {
+    id: 3,
+    title: 'Neck — Script Lettering',
+    sessions: 8,
+    category: 'Name Removal',
+    image: 'https://trueskintattooremoval.com/assets/result-3-DOaxFpEb.webp',
+  },
+  {
+    id: 4,
+    title: 'Back — Selective Color Removal',
+    sessions: 6,
+    category: 'Selective Removal',
+    image: 'https://trueskintattooremoval.com/__l5e/assets-v1/7a0ce517-026f-4122-a147-867c79d29adc/lotus-selective-v2.jpg',
+  },
+  {
+    id: 5,
+    title: 'Torso — Old English Lettering',
+    sessions: 8,
+    category: 'Name Removal',
+    image: 'https://trueskintattooremoval.com/__l5e/assets-v1/f93fb76c-0b10-4333-b961-2c0fd1aec282/bmf-lettering-v2.jpg',
+  },
+  {
+    id: 6,
+    title: 'Hip — Color Ink Removal',
+    sessions: 7,
+    category: 'Color Ink',
+    image: 'https://trueskintattooremoval.com/__l5e/assets-v1/3dbbc88d-c3be-4b0a-b522-52d236f5b84e/heart-boot-v2.jpg',
+  },
+  {
+    id: 7,
+    title: 'Back — Selective Text Removal',
+    sessions: 5,
+    category: 'Selective Removal',
+    image: 'https://trueskintattooremoval.com/__l5e/assets-v1/1b153fe9-ccfc-4ab5-9651-ed5d5f2fe42e/cherry-blossom-v2.jpg',
+  },
+  {
+    id: 8,
+    title: 'Torso — Multi-Color Ink',
+    sessions: 9,
+    category: 'Color Ink',
+    image: 'https://trueskintattooremoval.com/__l5e/assets-v1/b9284a72-2acc-4b26-910f-c72da0885d20/ghoulchild-v2.jpg',
+  },
+  {
+    id: 9,
+    title: 'Abdomen — Black Lettering',
+    sessions: 10,
+    category: 'Black Ink',
+    image: 'https://trueskintattooremoval.com/__l5e/assets-v1/59611354-bbe6-499f-a766-133e3c779814/jean-abdomen-v2.jpg',
+  },
+  {
+    id: 10,
+    title: 'Torso — Detailed Black Ink',
+    sessions: 11,
+    category: 'Black Ink',
+    image: 'https://trueskintattooremoval.com/__l5e/assets-v1/4c9046e9-d14c-42fb-8e83-8ef0d3acd743/virgin-mary-v2.jpg',
+  },
+  {
+    id: 11,
+    title: 'Neck — Name Removal Progression',
+    sessions: 6,
+    category: 'Name Removal',
+    image: 'https://trueskintattooremoval.com/assets/tacho-progression-KimNxWNE.webp',
+  },
+  {
+    id: 12,
+    title: 'Arm — Cover-Up Preparation',
+    sessions: 3,
+    category: 'Cover-Up Prep',
+    image: 'https://trueskintattooremoval.com/assets/spider-coverup-BeDaY9vS.webp',
+  },
+];
+
+export const categories = ['All', 'Black Ink', 'Color Ink', 'Selective Removal', 'Cover-Up Prep', 'Name Removal'];

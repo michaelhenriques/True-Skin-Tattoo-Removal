@@ -1,0 +1,44 @@
+{
+  "name": "Testimonial",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "The full review or testimonial text from the client"
+    },
+    "author_name": {
+      "type": "string",
+      "description": "First name or initials of the client who left the review"
+    },
+    "rating": {
+      "type": "number",
+      "description": "Star rating from 1 to 5",
+      "default": 5
+    },
+    "treatment_type": {
+      "type": "string",
+      "enum": [
+        "Full Removal",
+        "Cover-Up Prep",
+        "Selective Removal",
+        "Name Removal",
+        "Color Ink"
+      ],
+      "description": "Category of removal the client received",
+      "default": "Full Removal"
+    },
+    "sessions_completed": {
+      "type": "number",
+      "description": "Number of sessions completed at the time of the review"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "description": "Whether to highlight this testimonial on the site",
+      "default": false
+    }
+  },
+  "required": [
+    "description",
+    "author_name"
+  ]
+}
